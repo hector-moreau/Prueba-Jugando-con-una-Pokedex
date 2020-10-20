@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="icon"   href="assets/img/favicon.ico" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+</head>
+
+<body>
+    <div align=center><img src="assets/img/pokedex-icon.png"></div>
+        
+    <div class="divformulario">
+        <h2>ポケモン図鑑</h2>
+        <h2>Jugando con una Pokédex</h2>
+        <!-- <p>Formulario para buscar información de una especie de Pokémon en concreto.</p> -->
+        <h4>Formulario para buscar información de una especie de Pokémon en concreto.</h4>
+        
+        <form id="formulario">
+            <div>
+                <label>
+                    Ingrese número de Pokémon
+                </label>
+                <input id="numero" type="number" name="idPokemon" placeholder="Números del 1 al 893">
+            </div>
+            
+            <div class="centrar">
+                <button id="boton" type="submit">Consultar</button>
+                  
+            </div>
+        </form>       
+    </div>
+
+
+    <div class="grid">
+        <main class="main_container container"></main>
+            <div id="datos" class="box-datos">
+                <div>
+                    <span id="img1"><img id="imgfront" src=""></span>
+                    <span id="img2"><img id="imgback" src=""></span>
+                </div>
+
+                <div id="info" class="infoPokemon">
+                    <h1 id="nombrePokemon"></h1>
+                    <h5 id="habilidades"></h5>
+                    <h5 id="tipos"></h5>
+                    <h5 id="altura"></h5>
+                    <h5 id="peso"></h5>
+                </div>
+            </div>
+
+            <div class="chart">
+                <div id="miGrafico" width="400" height="400"></div>
+            </div>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
